@@ -1,0 +1,212 @@
+[
+    {
+        "customerId": "CUST001",
+        "customerName": "Budi Santoso",
+        "email": "budi@mail.com",
+        "phone": "081230001",
+        "loyalty": "Gold"
+    },
+    {
+        "customerId": "CUST002",
+        "customerName": "Alex Wijaya",
+        "email": "alex@mail.com",
+        "phone": "081230002",
+        "loyalty": "Silver"
+    },
+    {
+        "customerId": "CUST003",
+        "customerName": "Siti Aminah",
+        "email": "siti@mail.com",
+        "phone": "081230003",
+        "loyalty": "Bronze"
+    },
+    {
+        "customerId": "CUST004",
+        "customerName": "Andi Saputra",
+        "email": "andi@mail.com",
+        "phone": "081230004",
+        "loyalty": "Gold"
+    },
+    {
+        "customerId": "CUST005",
+        "customerName": "Rina Putri",
+        "email": "rina@mail.com",
+        "phone": "081230005",
+        "loyalty": "Silver"
+    },
+    {
+        "customerId": "CUST006",
+        "customerName": "Dewi Lestari",
+        "email": "dewi@mail.com",
+        "phone": "081230006",
+        "loyalty": "Bronze"
+    },
+    {
+        "customerId": "CUST007",
+        "customerName": "Fajar Nugroho",
+        "email": "fajar@mail.com",
+        "phone": "081230007",
+        "loyalty": "Gold"
+    },
+    {
+        "customerId": "CUST008",
+        "customerName": "Rizky Pratama",
+        "email": "rizky@mail.com",
+        "phone": "081230008",
+        "loyalty": "Silver"
+    },
+    {
+        "customerId": "CUST009",
+        "customerName": "Putri Ayu",
+        "email": "putri@mail.com",
+        "phone": "081230009",
+        "loyalty": "Bronze"
+    },
+    {
+        "customerId": "CUST010",
+        "customerName": "Agus Salim",
+        "email": "agus@mail.com",
+        "phone": "081230010",
+        "loyalty": "Gold"
+    },
+    {
+        "customerId": "CUST011",
+        "customerName": "Yusuf Hidayat",
+        "email": "yusuf@mail.com",
+        "phone": "081230011",
+        "loyalty": "Silver"
+    },
+    {
+        "customerId": "CUST012",
+        "customerName": "Lina Marlina",
+        "email": "lina@mail.com",
+        "phone": "081230012",
+        "loyalty": "Bronze"
+    },
+    {
+        "customerId": "CUST013",
+        "customerName": "Hendra Gunawan",
+        "email": "hendra@mail.com",
+        "phone": "081230013",
+        "loyalty": "Gold"
+    },
+    {
+        "customerId": "CUST014",
+        "customerName": "Sari Dewi",
+        "email": "sari@mail.com",
+        "phone": "081230014",
+        "loyalty": "Silver"
+    },
+    {
+        "customerId": "CUST015",
+        "customerName": "Rahmat Hidayat",
+        "email": "rahmat@mail.com",
+        "phone": "081230015",
+        "loyalty": "Bronze"
+    },
+    {
+        "customerId": "CUST016",
+        "customerName": "Dina Kartika",
+        "email": "dina@mail.com",
+        "phone": "081230016",
+        "loyalty": "Gold"
+    },
+    {
+        "customerId": "CUST017",
+        "customerName": "Bayu Saputra",
+        "email": "bayu@mail.com",
+        "phone": "081230017",
+        "loyalty": "Silver"
+    },
+    {
+        "customerId": "CUST018",
+        "customerName": "Nina Sari",
+        "email": "nina@mail.com",
+        "phone": "081230018",
+        "loyalty": "Bronze"
+    },
+    {
+        "customerId": "CUST019",
+        "customerName": "Rudi Hartono",
+        "email": "rudi@mail.com",
+        "phone": "081230019",
+        "loyalty": "Gold"
+    },
+    {
+        "customerId": "CUST020",
+        "customerName": "Mega Wati",
+        "email": "mega@mail.com",
+        "phone": "081230020",
+        "loyalty": "Silver"
+    },
+    {
+        "customerId": "CUST021",
+        "customerName": "Tono Wijaya",
+        "email": "tono@mail.com",
+        "phone": "081230021",
+        "loyalty": "Bronze"
+    },
+    {
+        "customerId": "CUST022",
+        "customerName": "Wati Kusuma",
+        "email": "wati@mail.com",
+        "phone": "081230022",
+        "loyalty": "Gold"
+    },
+    {
+        "customerId": "CUST023",
+        "customerName": "Joko Susilo",
+        "email": "joko@mail.com",
+        "phone": "081230023",
+        "loyalty": "Silver"
+    },
+    {
+        "customerId": "CUST024",
+        "customerName": "Indah Permata",
+        "email": "indah@mail.com",
+        "phone": "081230024",
+        "loyalty": "Bronze"
+    },
+    {
+        "customerId": "CUST025",
+        "customerName": "Zaki Ramadhan",
+        "email": "zaki@mail.com",
+        "phone": "081230025",
+        "loyalty": "Gold"
+    },
+    {
+        "customerId": "CUST026",
+        "customerName": "Citra Lestari",
+        "email": "citra@mail.com",
+        "phone": "081230026",
+        "loyalty": "Silver"
+    },
+    {
+        "customerId": "CUST027",
+        "customerName": "Eko Prasetyo",
+        "email": "eko@mail.com",
+        "phone": "081230027",
+        "loyalty": "Bronze"
+    },
+    {
+        "customerId": "CUST028",
+        "customerName": "Farah Nabila",
+        "email": "farah@mail.com",
+        "phone": "081230028",
+        "loyalty": "Gold"
+    },
+    {
+        "customerId": "CUST029",
+        "customerName": "Gilang Saputra",
+        "email": "gilang@mail.com",
+        "phone": "081230029",
+        "loyalty": "Silver"
+    },
+    {
+        "customerId": "CUST030",
+        "customerName": "Hani Putri",
+        "email": "hani@mail.com",
+        "phone": "081230030",
+        "loyalty": "Bronze"
+    }
+]
