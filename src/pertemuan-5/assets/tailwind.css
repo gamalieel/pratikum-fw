@@ -2,21 +2,24 @@
 
 @font-face {
   font-family: "Barlow";
-  src: url("/fonts/Barlow-Regular.ttf");
+  src: url("/fonts/Barlow-Reguler.ttf");
 }
 
 @font-face {
   font-family: "Poppins";
-  src: url("/fonts/Poppins-Regular.ttf");
+  src: url("/fonts/Poppins-Reguler.ttf");
 }
 
 @font-face {
   font-family: "Poppins";
-  src: url("/fonts/Poppins-Bold.ttf");
+  src: url("/fonts/Poppins-Black.ttf");
   font-weight: bold;
 }
 
 
 body {
-  font-family: "Barlow", sans-serif;
+  --font-family: "Barlow", sans-serif;
+  --font-family: "Poppins", sans-serif;
+
+  @apply font-barlow;
 }

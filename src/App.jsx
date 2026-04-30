@@ -1,37 +1,41 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./assets/tailwind.css";
-import Sidebar from "./layouts/Sidebar";
-import Header from "./layouts/Header";
-import Dashboard from "./pages/Dashboard";
+import React, { Suspense, useState } from "react";
 import { Route, Routes } from "react-router-dom";
-import Customers from "./pages/Customers";
-import Orders from "./pages/Orders";
-import NotFound from "./pages/NotFound";
-import Error400 from "./pages/Error400";
-import Error401 from "./pages/Error401";
-import Error403 from "./pages/Error403";
+import Loading from "./components/Loading";
+import AuthLayout from "./layouts/AuthLayout";
+import Login from "./pages/auth/Login";
+
+
+const MainLayout = React.lazy(() => import("./layouts/MainLayout"));
+const Dashboard = React.lazy(() => import("./pages/Dashboard"));
+const Orders = React.lazy(() => import("./pages/Orders"));
+const Customers = React.lazy(() => import("./pages/Customers"));
+
+const Register = React.lazy(() => import("./pages/auth/Register"));
+const Forgot = React.lazy(() => import("./pages/auth/Forgot"));
+
+const Error400 = React.lazy(() => import("./pages/Error400"));
+const Error401 = React.lazy(() => import("./pages/Error401"));
+const Error403 = React.lazy(() => import("./pages/Error403"));
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div className="flex min-h-screen bg-gray-100">
-      <Sidebar />
-
-      <div className="flex-1 p-6">
-        <Header />
-        <Routes>
-          <Route path="*" element={<NotFound />} />
-          <Route path="/" element={<Dashboard />} />
-          <Route path="/orders" element={<Orders />} />
-          <Route path="/customers" element={<Customers />} />
-          <Route path="/error400" element={<Error400 />} />
-          <Route path="/error401" element={<Error401 />} />
-          <Route path="/error403" element={<Error403 />} />
-        </Routes>
-      </div>
-    </div>
+    <Suspense fallback={<Loading />}>
+      <Routes>
+        <Route element={<MainLayout />}>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/orders" element={<Orders />} />
+        <Route path="/customers" element={<Customers />} />
+        <Route path="/error400" element={<Error400 />} />
+        <Route path="/error401" element={<Error401 />} />
+        <Route path="/error403" element={<Error403 />} />
+        </Route>
+        <Route element={<AuthLayout/>}>
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register/>} />
+            <Route path="/forgot" element={<Forgot/>} />
+        </Route>
+      </Routes>
+    </Suspense>
   );
 }
 

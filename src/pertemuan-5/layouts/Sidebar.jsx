@@ -9,26 +9,19 @@ export default function Sidebar() {
     return (
         <div className="w-64 bg-white p-6 flex flex-col justify-between min-h-screen border-r">
 
-            <div>
-
-                <h1 className="text-4xl font-bold font-[Poppins] mb-1">
-                    Sedap<span className="text-green-500">.</span>
-                </h1>
-
-                <p className="text-gray-400 text-sm mb-8">
-                    Modern Admin Dashboard
-                </p>
+            <div className=" flex flex-col ">
+                <span className="font-poppins font-[1000] text-[48px]">Sedap<b className="text-green-500">.</b></span>
+                <span className="text-gray-400 font-semibold font-barlow">Modern Admin Dashboard</span>
 
                 <ul className="space-y-4">
 
                     {/* DASHBOARD */}
                     <li
                         onClick={() => setActive("dashboard")}
-                        className={`flex items-center gap-3 cursor-pointer ${
-                            active === "dashboard"
+                        className={`flex items-center gap-3 cursor-pointer ${active === "dashboard"
                                 ? "text-green-500 font-bold"
                                 : "text-gray-500"
-                        }`}
+                            }`}
                     >
                         <FaHome />
                         Dashboard
@@ -37,11 +30,10 @@ export default function Sidebar() {
                     {/* ORDERS */}
                     <li
                         onClick={() => setActive("orders")}
-                        className={`flex items-center gap-3 cursor-pointer ${
-                            active === "orders"
+                        className={`flex items-center gap-3 cursor-pointer ${active === "orders"
                                 ? "text-green-500 font-bold"
                                 : "text-gray-500"
-                        }`}
+                            }`}
                     >
                         <FaShoppingCart />
                         Orders
@@ -50,11 +42,10 @@ export default function Sidebar() {
                     {/* CUSTOMERS */}
                     <li
                         onClick={() => setActive("customers")}
-                        className={`flex items-center gap-3 cursor-pointer ${
-                            active === "customers"
+                        className={`flex items-center gap-3 cursor-pointer ${active === "customers"
                                 ? "text-green-500 font-bold"
                                 : "text-gray-500"
-                        }`}
+                            }`}
                     >
                         <FaUsers />
                         Customers
@@ -77,7 +68,7 @@ export default function Sidebar() {
                         </button>
 
                         <img
-                             src="/img/ozora.png"
+                            src="/img/ozora.png"
                             className="w-10 h-10 rounded-full border-2 border-white"
                             alt="icon"
                         />
