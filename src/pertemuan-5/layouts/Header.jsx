@@ -42,7 +42,7 @@ export default function Header() {
                 <SlSettings className="text-xl text-gray-600" />
 
                 <div className="flex items-center gap-2">
-                    <span>Hallo, <b>Ozora Feona Surya</b></span>
+                    <span>Hallo, <b>Gamaliel Manalu</b></span>
                     <img
                          src="/img/puu.png"
                         className="w-10 h-10 rounded-full"
