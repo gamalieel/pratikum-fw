@@ -1,18 +1,15 @@
 import { useState } from "react";
-import { FaBan, FaDollarSign, FaShoppingCart, FaTruck } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import PageHeader from "../pertemuan-5/components/PageHeader";
 import data from "../data/orders.json";
 
 export default function Orders() {
   const [orders, setOrders] = useState(data);
   const [showForm, setShowForm] = useState(false);
+
   return (
     <div>
-
-      <PageHeader
-        title="Orders"
-        breadcrumb={["Dashboard", "Orders"]}
-      >
+      <PageHeader title="Orders" breadcrumb={["Dashboard", "Orders"]}>
         <button
           onClick={() => setShowForm(!showForm)}
           className="bg-green-500 text-white px-4 py-2 rounded"
@@ -33,6 +30,7 @@ export default function Orders() {
           <tr>
             <th>ID</th>
             <th>Customer</th>
+            <th>Product</th>
             <th>Status</th>
             <th>Price</th>
             <th>Date</th>
@@ -44,14 +42,24 @@ export default function Orders() {
             <tr key={item.orderId}>
               <td>{item.orderId}</td>
               <td>{item.customerName}</td>
+
+              {/* 🔥 LINK KE DETAIL PRODUCT */}
+              <td>
+                <Link
+                  to={`/products/${item.productId}`}
+                  className="text-emerald-500 underline"
+                >
+                  Lihat Produk
+                </Link>
+              </td>
+
               <td>{item.status}</td>
-              <td>{item.totalPrice}</td>
+              <td>Rp {item.totalPrice.toLocaleString()}</td>
               <td>{item.orderDate}</td>
             </tr>
           ))}
         </tbody>
       </table>
-
     </div>
   );
 }

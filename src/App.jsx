@@ -28,6 +28,7 @@ function App() {
         <Route path="/error400" element={<Error400 />} />
         <Route path="/error401" element={<Error401 />} />
         <Route path="/error403" element={<Error403 />} />
+        <Route path="/products/:id" element={<ProductDetail />} /> 
         </Route>
         <Route element={<AuthLayout/>}>
             <Route path="/login" element={<Login />} />
